@@ -1,0 +1,678 @@
+{% extends "pical_app/base.html" %}
+{% load static%}
+
+{% block body_block %}
+
+<section id="hero" class="hero d-flex align-items-center">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up">Select a wedding photographer.</h1>
+        <h2 data-aos="fade-up" data-aos-delay="400">The best fit  photographer for your wedding, Ready to help customer service anytime.</h2>
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center text-lg-start">
+            <a href="#contact" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <span>Contact Us</span>
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- End Hero -->
+
+<main id="main">
+
+  <!-- ======= ourworks Section ======= -->
+  <section id="ourworks" class="ourworks">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Check our latest work</h2>
+        <p></p>
+      </header>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="ourworks-flters" style=" background:var(--bg_color)">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Wedding</li>
+            <li data-filter=".filter-card">Engagement</li>
+            <li data-filter=".filter-web">Birthday</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row gy-4 ourworks-container" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-app">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-1.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-1.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Wedding"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-web">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-2.jpg'%}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-2.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Birthday"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-app">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-3.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-3.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Wedding"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-card">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-4.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-4.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Engagement"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-web">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-5.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-5.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Birthday"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-app">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-6.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-6.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Wedding"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-card">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-7.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-7.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Engagement"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-card">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-8.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-8.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Engagement"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 ourworks-item filter-web">
+          <div class="ourworks-wrap">
+            <img src="{% static 'img/ourworks/ourworks-9.jpg' %}" class="img-fluid" alt="">
+            <div class="ourworks-info">
+              <h4></h4>
+              <p></p>
+              <div class="ourworks-links">
+                <a href="{% static 'img/ourworks/ourworks-9.jpg' %}" data-gallery="ourworksGallery" class="portfokio-lightbox" title="Birthday"><i class="bi bi-plus"></i></a>
+                <a href="{% url 'pical_app:ourworks' %}" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End ourworks Section -->
+
+  <!-- Why US-->
+  <section id= 'whyus'class="whyus section">
+    <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="section-header" >
+                <h2>Why Us </h2>
+            </div>
+
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="col-lg-4 col-lg-3 col-md-6">
+                <div class="whyus-box" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Analysed photographer</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+                </div>
+                <div class="whyus-box" data-aos="fade-up" data-aos-delay="300">
+                    <h4>End to End support</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+                </div>
+                <div class="whyus-box" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Easy pricing </h4>
+                    <p>Properly analysed photographer on basis of 20 parameters</p>
+                </div>
+            </div>
+            <div id="hideit" class="col-md-4 text-center whyus-img" data-aos="fade-up" data-aos-delay="100">
+                <img src="{% static 'img/whyus.png' %}" alt="">
+            </div>
+            <div class="col-lg-4 col-lg-3 col-md-6">
+                <div class="whyus-box" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Wedding vision board</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+                </div>
+                <div class="whyus-box" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Complementary tools</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+                </div>
+                <div class="whyus-box" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Matchmaking</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, inventore?</p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </div><!-- .container close -->
+</section><!-- #whyus close -->
+
+<!-- How It Works-->
+
+<section id="howitwork" class="howitwork">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h2>How It Works</h2>
+    </header>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
+          <img src="{% static 'img/howitwork-1.png' %}" class="img-fluid" alt="">
+          <h3>Share Your event details to pical</h3>
+          <p>Executive from pical will call you to know your requirements and event details.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="box" data-aos="fade-up" data-aos-delay="200">
+          <img src="{% static 'img/howitwork-2.png' %}" class="img-fluid" alt="">
+          <h3>Aggregating Recommendation</h3>
+          <p>Photographers that fit for you requirement and personality are selected.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+        <div class="box" data-aos="fade-up" data-aos-delay="400">
+          <img src="{% static 'img/howitwork-3.png' %}" class="img-fluid" alt="">
+          <h3>Finalising Photographers</h3>
+          <p>Discussion with Potential  photographers ,No pressure,  finalise when you are fully satisfied and cross checked with other source.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+          <img src="{% static 'img/howitwork-4.png' %}" class="img-fluid" alt="">
+          <h3>All time Support</h3>
+          <p>Our work doesn’t end with matching you to photographers, will coordinate the whole project and will be available  anytime.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- End howitwork Section -->
+
+
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>What they are saying about us</h2>
+        <p></p>
+      </header>
+
+      <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                One of the best photography services are given by these people. I've requested services for my kitti party and i'm fully satiesfied by the services provided by them.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                One of the best photography services are given by these people. I've requested services for my kitti party and i'm fully satiesfied by the services provided by them.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                One of the best photography services are given by these people. I've requested services for my kitti party and i'm fully satiesfied by the services provided by them.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                One of the best photography services are given by these people. I've requested services for my kitti party and i'm fully satiesfied by the services provided by them.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{% static 'img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                One of the best photography services are given by these people. I've requested services for my kitti party and i'm fully satiesfied by the services provided by them.
+              </p>
+              <div class="profile mt-auto">
+                <img src="{% static 'img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </section><!-- End Testimonials Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-emoji-smile"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>No of happy Couples</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-journal-richtext"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Photographers Onboard</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-headset"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <i class="bi bi-people"></i>
+            <div>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>No of image processed</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  <!-- ======= Recent Blog Posts Section ======= -->
+  <section id="recent-blog-posts" class="recent-blog-posts">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Recent posts from our Blog</h2>
+        <p></p>
+      </header>
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-1.jpg' %}" class="img-fluid" alt=""></div>
+            <span class="post-date">Tue, September 15</span>
+            <h3 class="post-title">Relive Your Wedding With Best Photography 2020 Practices!</h3>
+            <a href="{% url 'pical_app:blog_single'%}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-2.jpg' %}" class="img-fluid" alt=""></div>
+            <span class="post-date">Fri, August 28</span>
+            <h3 class="post-title">Taking authentic candid shots and wedding hashtags</h3>
+            <a href="{% url 'pical_app:blog_single'%}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="post-box">
+            <div class="post-img"><img src="{% static 'img/blog/blog-3.jpg' %}" class="img-fluid" alt=""></div>
+            <span class="post-date">Mon, July 11</span>
+            <h3 class="post-title">Smoke photography helps in creating “that” cinematic view</h3>
+            <a href="{% url 'pical_app:blog_single'%}" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Recent Blog Posts Section -->
+
+   <!-- ======= F.A.Q Section ======= -->
+   <section id="faq" class="faq">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p></p>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- F.A.Q List 1-->
+          <div class="accordion accordion-flush" id="faqlist1">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                  How long will it take to prepare my wedding album?
+                </button>
+              </h2>
+              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div class="accordion-body">
+                  It depends over your requirement. we provide fast and reliable services.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                  How can i submit my pictures  to get a album?
+                </button>
+              </h2>
+              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div class="accordion-body">
+                  Are your services for India or outside as well?
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                  ways to make payment?
+                </button>
+              </h2>
+              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div class="accordion-body">
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <!-- F.A.Q List 2-->
+          <div class="accordion accordion-flush" id="faqlist2">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                  Can i get a album for my birthday party?
+                </button>
+              </h2>
+              <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                <div class="accordion-body">
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                  How does ur product work?
+                </button>
+              </h2>
+              <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                <div class="accordion-body">
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc v
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                  How can i connect you?
+                </button>
+              </h2>
+              <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                <div class="accordion-body">
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End F.A.Q Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>Contact Us</h2>
+        <p></p>
+      </header>
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6">
+
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Address</h3>
+                <p>A108 Adam Street,<br>New York, NY 535022</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-telephone"></i>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55<br>+1 6678 254445 41</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Us</h3>
+                <p>info@example.com<br>contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="info-box">
+                <i class="bi bi-clock"></i>
+                <h3>Open Hours</h3>
+                <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+          <form action="#" method="post" class="php-email-form">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" value = "" required>
+              </div>
+
+              <div class="col-md-6">
+                <input type="tel" class="form-control" name="phone" placeholder="+91-**********" required>
+              </div>
+
+              <div class="col-md-12">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="subject" rows="6" placeholder="Subject" required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="submit" value="submit">Send Message</button>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+{% endblock %}
