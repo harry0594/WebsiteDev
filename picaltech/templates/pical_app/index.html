@@ -635,44 +635,44 @@
         </div>
 
         <div class="col-lg-6">
-          <form action="#" method="post" class="php-email-form">
+          <form action="#hero" method="POST" class="php-email-form">
+            {% csrf_token %}
+           
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" value = "" required>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" value = "" required>
               </div>
 
               <div class="col-md-6">
-                <input type="tel" class="form-control" name="phone" placeholder="+91-**********" required>
+                <input type="phone" name="phone" class="form-control" id="phone" placeholder="+91-**********" required>
               </div>
 
               <div class="col-md-12">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required>
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="subject" rows="6" placeholder="Subject" required></textarea>
+                <textarea name="message" class="form-control" id="message" rows="6" placeholder="Your Query Subject" required></textarea>
               </div>
 
               <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
                 <button type="submit" value="submit">Send Message</button>
               </div>
 
             </div>
           </form>
+        </div>
 
         </div>
 
       </div>
 
-    </div>
 
   </section><!-- End Contact Section -->
 
 </main><!-- End #main -->
 
 {% endblock %}
+
+<!-- s -->
